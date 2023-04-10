@@ -25,6 +25,7 @@ COMMANDS:
 19. Task Complete (Shutdown): "task_complete", args: "reason": "<reason>"
 20. Generate Image: "generate_image", args: "prompt": "<prompt>"
 21. Do Nothing: "do_nothing", args: ""
+21. Execute terminal command: "execute_terminal_command", args: "command": "<command>"
 
 RESOURCES:
 

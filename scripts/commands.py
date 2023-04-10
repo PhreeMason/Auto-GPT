@@ -7,7 +7,7 @@ import speak
 from config import Config
 import ai_functions as ai
 from file_operations import read_file, write_to_file, append_to_file, delete_file, search_files
-from execute_code import execute_python_file
+from execute_code import execute_python_file, execute_terminal_command
 from json_parser import fix_and_parse_json
 from image_gen import generate_image
 from duckduckgo_search import ddg
@@ -79,6 +79,8 @@ def execute_command(command_name, arguments):
             return list_agents()
         elif command_name == "delete_agent":
             return delete_agent(arguments["key"])
+        elif command_name == "execute_terminal_command":
+            return execute_terminal_command(arguments["command"])
         elif command_name == "get_text_summary":
             return get_text_summary(arguments["url"], arguments["question"])
         elif command_name == "get_hyperlinks":

@@ -59,6 +59,7 @@ def fix_and_parse_json(
                   "\n If you see this warning frequently, it's likely that"
                   " your prompt is confusing the AI. Try changing it up"
                   " slightly.")
+            print(f"Failed to parse: '{json_str}'")
             # Now try to fix this up using the ai_functions
             ai_fixed_json = fix_json(json_str, JSON_SCHEMA)
 

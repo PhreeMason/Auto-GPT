@@ -298,7 +298,7 @@ cfg = Config()
 parse_arguments()
 ai_name = ""
 prompt = construct_prompt()
-# print(prompt)
+print(prompt)
 # Initialize variables
 full_message_history = []
 result = None

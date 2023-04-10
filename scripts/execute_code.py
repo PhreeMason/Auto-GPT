@@ -46,3 +46,12 @@ def execute_python_file(file):
 
     except Exception as e:
         return f"Error: {str(e)}"
+
+
+def execute_terminal_command(command: str):
+    # Clean the command by removing any newlines
+    command = command.replace("\n", "")
+    # Execute the command
+    print(f"Executing command: {command}")
+    response = os.system(command)
+    return response
